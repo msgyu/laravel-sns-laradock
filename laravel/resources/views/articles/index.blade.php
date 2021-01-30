@@ -2,6 +2,7 @@
 @section('title', '記事一覧')
 @section('content')
 <div class="container">
+@foreach($articles as $article)
   <div class="card mt-3">
     <div class="card-body d-flex flex-row">
       <i class="fas fa-user-circle fa-3x mr-1"></i>
@@ -23,6 +24,7 @@
       </div>
     </div>
   </div>
+@endforeach
 </div>
 
 @endsection
